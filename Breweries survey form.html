@@ -1,0 +1,303 @@
+<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+<style>
+:root {
+  --color-white: #f3f3f3;
+  --color-darkblue: #1b1b32;
+  --color-darkblue-alpha: rgba(27, 27, 50, 0.8);
+  --color-green: #37af65;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lobster', sans-serif;
+  font-size: 1rem;
+  font-weight: 450;
+  line-height: 1.4;
+  color: var(--color-white);
+  margin: 0;
+}
+/* mobile friendly alternative to using background-attachment: fixed */
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  background: var(--color-darkblue);
+  background-image: linear-gradient(
+      115deg,
+      rgba(58, 58, 158, 0.8),
+      rgba(136, 136, 206, 0.7)
+    ),
+   
+    url(https://i1.wp.com/nairametrics.com/wp-content/uploads/2016/07/Nigerian-Breweries.jpg?fit=700%2C400&ssl=1);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+h1 {
+  font-weight: 400;
+  line-height: 1.2;
+  text-align: center;
+  padding: 45px;
+  color: white;
+}
+.image{
+  width: 100px;
+  height:180px;
+  
+}
+.light-blue-border {
+  border-color: lightblue;
+  border-width: 5px;
+  border-style: solid;
+  border-radius: 10px;
+  border-radius: 50%;
+}
+p {
+  font-size: 1.125rem;
+  color: white;
+}
+
+h1,
+p {
+  margin-top: 3;
+  margin-bottom: 0.8rem;
+}
+
+label {
+  display: flex;
+  align-items: center;
+  font-size: 1.125rem;
+  margin-bottom: 0.6rem;
+  color: white;
+}
+
+input,
+button,
+select,
+textarea {
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+button {
+  border: none;
+}
+
+.container {
+  width: 100%;
+  margin: 3.125rem auto 0 auto;
+  align-item: center;
+}
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+.header {
+  padding: 0 0.625rem;
+  margin-bottom: 1.875rem;
+}
+
+.description {
+  font-style: italic;
+  font-weight: 200;
+  color: silver;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+}
+
+.clue {
+  margin-left: 0.25rem;
+  font-size: 0.9rem;
+  color: #e4e4e4;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* form */
+
+form {
+  background: var(--color-darkblue-alpha);
+  padding: 2.5rem 0.625rem;
+  border-radius: 0.25rem;
+}
+
+@media (min-width: 480px) {
+  form {
+    padding: 2.5rem;
+  }
+}
+
+.form-group {
+  margin: 0 auto 1.25rem auto;
+  padding: 0.25rem;
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  height: 2.375rem;
+  padding: 0.375rem 0.75rem;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.form-control:focus {
+  border-color: #80bdff;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.input-radio,
+.input-checkbox {
+  display: inline-block;
+  margin-right: 0.625rem;
+  min-height: 1.25rem;
+  min-width: 1.25rem;
+}
+
+.input-textarea {
+  min-height: 120px;
+  width: 100%;
+  padding: 0.625rem;
+  resize: vertical;
+}
+
+.submit-button {
+  display: block;
+  width: 100%;
+  padding: 0.75rem;
+  background-color: darkgreen;
+  border-radius: 2px;
+  cursor: pointer;
+}
+.submit-button:hover {
+  background-color: lightgreen;
+}
+.right {
+  color:#000000;
+  text-align: center;
+  font-size: 15px;
+  
+}
+</style>
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta>
+            <title>Breweriessurveyform.com</title>
+        </meta>
+    </head>
+    <div class="box-container">
+        <header class="header">
+            <h1 id="title">Nigerian Breweries International Survey Form</h1>
+            <p id="description" class="description text-center">Thanks for your Suggestions towards our Industry</p>
+            <img class="image light-blue-border" src="data:image/jpeg;base64,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" alt="logo-of-the-Nigerian-Breweries">
+        </header>
+        <form id="survey-form">
+            <div class="form-group">
+                <label id="name-label" for="name">Full Name</label>
+                <input type="text" name="name" id="name" class="form-control" placeholder="Enter your full name" required />
+            </div>
+            <div class="form-group">
+                <label id="nickname-label" for="nickname">Nickname</label>
+                <input
+        type="text"
+        name="nickname"
+        id="nickname"
+        class="form-control"
+        placeholder="Enter your nickname"
+        optional
+      />
+            </div>
+            <div class="form-group">
+                <label id="email-label" for="email">Email Address</label>
+                <input
+        type="email"
+        name="email"
+        id="email"
+        class="form-control"
+        placeholder="Enter your Email"
+        required
+      />
+            </div>
+            <div class="form-group">
+                <label id="number-label" for="number"
+        >Age<span class="clue">(optional)</span></label
+      >
+                <input
+        type="number"
+        name="age"
+        id="number"
+        min="18"
+        max="99"
+        class="form-control"
+        placeholder="Age"
+      />
+            </div>
+            <p>The best option of our product that meet your taste:</p>
+            <select id="dropdown" name="products" class="form-control" required>
+                <option disabled selected value>favorite product</option>
+                <option value="star-lager">Star Lager</option>
+                <option value="goldberg-lager">Goldberg Lager</option>
+                <option value="gulder-lager-beer">Gulder Lager Beer</option>
+                <option value="heineken-lager">Heineken Lager</option>
+                <option value="33-export-lager">33 Export Lager</option>
+                <option value="not-listed">Not in list</option>
+                <option value="all-of-the-above">All your products</option>
+            </select>
+            <div class="form-group">
+                <p>Would you recommend our products to a friend</p>
+                <label><input name="user-recommend" type="radio" value="yes" class="input-radio" checked />Yes</label>
+                <label><input name="user-recommend" type="radio" value="no" class="input-radio" checked />No</label>
+                <label><input name="user-recommend" type="radio" value="maybe" class="input-radio" checked />Maybe</label>
+            </div>
+            <div>
+                <p>What would you like to see improve in our products: <span class="clue">(More than one selection is allowed)</span></p>
+                <label><input name="like" type="checkbox" value="increase-in-quality" class="input-checkbox" />Increase in Quality</label>
+                <label><input name="like" type="checkbox" value="quick-delivery" class="input-checkbox" />Quick Delivery</label>
+                <label><input name="like" type="checkbox" value="decrease-in-price" class="input-checkbox" />Decrease in Price</label>
+            </div>
+            <div class="form-group">
+                <p>Any comments or suggestions?</p>
+                <textarea
+        id="comments"
+        class="input-textarea"
+        name="comment"
+        placeholder="Enter your comment here..."
+      ></textarea>
+            </div>
+            <div class="form-group">
+                <button type="submit" id="submit" class="submit-button">
+        <strong>Submit</strong>
+      </button>
+  </form>
+        <p class="right">&copy Nigerian Breweries Industry</p>
+    </div>
+</html>
